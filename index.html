@@ -1,75 +1,159 @@
-<!--WithoutRWD-->
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>A-he's shoe box</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="menu">
-                <ul>
-                    <li><a href="#ShoeBox">ShoeBox</a></li>
-                    <li><a href="#AboutMe">AboutMe</a></li>
-                    <li><a href="#Homeland">Homeland</a></li>
-                    <li><a href="#Favorite">Favorite</a></li>
-                    <li><a href="#Hobby">Hobby</a></li>
-                    <li><a href="#Expectation">Expectation</a></li>
-                    <li><a href="#QnA">QnA</a></li>
-                </ul>
-            </div>
-            <div class="slides">
-                <section id="ShoeBox">
-                    <h2>Wellcome to A_he's shoe box!!</h2>
-                    <div class="dec d1"></div>
-                    <div class="dec d2"></div>
-                    <div class="dec d3"></div>
-                </section>
-                <section id="AboutMe">
-                    <h2>AboutMe</h2>
-                    <img id="myphoto" src="./pictures/myphoto.jpg" />
-                    <div class="intro">
-                        <ul>
-                            <li><p>name: Xu,Ya-he aka A-He</p></li>
-                            <br>
-                            <li><p>Age: 19</p></li>
-                            <br>
-                            <li><p>WuQi JH->TCSSH->NTCU.CS</p></li>
-                            <br>
-                            <li><p>Motto: Happiness is the best policy.</p></li>
-                        </ul>
-                    </div>
-                </section>
-                <section id="Homeland">
-                    <h2>I live in Taichung,WuQi</h2>
-                    <img id="Wuqi" src="./pictures/Wuqi.png" />
-                    <img id="saltycake" src="./pictures/saltycake.jpg" />
-                    <img id="outlet" src="./pictures/outlet.jpg" />
-                </section>
-                <section id="Favorite">
-                    <h2>Favorite things</h2>
-                    <img id="lazy" src="./pictures/lazy.jpg" />
-                    <img id="volleyball" src="./pictures/volleyball.jpg" />
-                    <img id="movie" src="./pictures/movie.jpg" />
-                </section>
-                <section id="Hobby">
-                    <h2>My Hobby is</h2>
-                    <img id="coding" src="./pictures/coding.png" />
-                    <img id="writing" src="./pictures/writing.jpg" />
-                    <img id="acting" src="./pictures/acting.jpg" />
-                </section>
-                <section id="Expectation">
-                    <h2>Be a diligent man</h2>
-                    <img id="diligent" src="./pictures/diligent.png" />
-                </section>
-                <section id="QnA">
-                    <h2>QnA</h2>
-                    <div class="dec d1"></div>
-                    <div class="dec d2"></div>
-                    <div class="dec d3"></div>
-                </section>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>A-he's shoe box</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#scrollSpy" data-offset="0">
+    <nav id="scrollSpy" class="menu navbar ">
+      <ul id="menu" class="nav flex-column">
+        <li class="nav-item ">
+          <a class="nav-link " href="#head">ShoeBox</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#AboutMe">AboutMe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Homeland">Homeland</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#Favorite">Favorite</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#Hobby">Hobby</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Expectation">Expectation</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#QnA">QnA</a></li>
+      </ul>
+    </nav>
+
+    <div class="slides container-fluid">
+      <div id="head" class="head parallax">
+        <div class="col-6" id="WelcomeShoeBox">
+          <h2>Wellcome to A-he's shoe box!!</h2>
         </div>
-    </body>
+        <div id="AboutMe" class="span1 parallax"></div>
+      </div>
+      <div class="section">
+        <h2>AboutMe</h2>
+        <div class="row">
+          <div class="col-6">
+            <img id="myPhoto" src="img/myphoto.jpg" alt="myPhoto" />
+          </div>
+          <div class="intro col-6">
+            <ul>
+              <li>
+                <p><strong>name: </strong>Xu,Ya-he aka A-He</p>
+              </li>
+              <li>
+                <p><strong>Age: </strong>19</p>
+              </li>
+              <li>
+                <p>WuQi JH->TCSSH->NTCU.CS</p>
+              </li>
+              <li>
+                <p><strong>Motto: </strong>Happiness is the best policy.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="Homeland" class="span2 parallax"></div>
+
+      <div class="section">
+        <h2>I live in Taichung,WuQi</h2>
+        <div class="row my-auto">
+          <div class="left col-4 px-1">
+            <img id="saltycake" src="img/saltycake.jpg" />
+          </div>
+          <div class="middle col-5 px-1">
+            <img id="Wuqi" src="img/Wuqi.png" />
+          </div>
+          <div class="right col-3 px-1">
+            <img id="outlet" src="img/outlet.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div id="Favorite" class="span3 parallax"></div>
+
+      <div class="section">
+        <h2>Favorite things</h2>
+        <div class="row">
+          <div class="left col-5 px-1">
+            <img id="lazy" src="img/lazy.jpg" />
+          </div>
+          <div class="middle col-3 px-1">
+            <img id="volleyball" src="img/volleyball.jpg" />
+          </div>
+          <div class="right col-4 px-1">
+            <img id="movie" src="img/movie.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div id="Hobby" class="span4 parallax"></div>
+
+      <div class="section">
+        <h2>My Hobby is</h2>
+        <div class="row">
+          <div class="left col-4 px-1">
+            <img id="coding" src="img/coding.png" />
+          </div>
+          <div class="middle col-4 px-1">
+            <img id="writing" src="img/writing.jpg" />
+          </div>
+          <div class="right col-4 px-1">
+            <img id="acting" src="img/acting.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div id="Expectation" class="span5 parallax"></div>
+
+      <div class="section">
+        <h2>Be a diligent man</h2>
+        <div class="row">
+          <div class="middle col-6 mx-auto">
+            <img id="diligent" src="img/diligent.png" />
+          </div>
+        </div>
+      </div>
+
+      <div id="QnA" class="span6 parallax"></div>
+
+      <div class="QnA row section">
+        <h2>QnA</h2>
+      </div>
+      <div class="span7 parallax"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

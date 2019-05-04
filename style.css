@@ -1,173 +1,151 @@
-html
-{
-scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body
-{
-    margin: 0;
-    padding: 0;
-    font-family: Courier;
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Courier;
 }
-.container
-{
-    margin: 0;
-    padding: 0;
+.container-fluid {
+  padding: 0;
+  overflow: hidden;
 }
-.menu
-{
-    top:50%;
-    transform: translate(0,-50%);
-    position: fixed;
-    z-index: 5;
+.menu {
+  top: 0;
+  position: fixed;
+  z-index: 5;
 }
-.menu ul li{
-    margin-bottom: 10px;
-    list-style-type: none;
+#menu li a {
+  padding: 5px 15px;
+  border-color: cornflowerblue;
+  background-color: greenyellow;
+  border-left: 5px solid black;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.4;
+  color: black;
 }
-.menu ul li a{
-    padding-right:50px;
-    padding-left: 5px;
-    font-weight: bold;
-    border-left:1px solid black;
-    text-decoration: none;
-    color: black;
+#menu li a:hover,
+#menu li a.active {
+  background-color: cornflowerblue;
+  transition-duration: 0.5s;
+  opacity: 1;
 }
-.menu ul li a:hover{
-    background-color: greenyellow;
-    border-color: cornflowerblue;
-    color: cornflowerblue;
+#myPhoto {
+  left: 40%;
+  height: 40vh;
+  width: auto;
+  position: absolute;
 }
-section
-{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height:100vh;
-    position: relative;
-    overflow: hidden;
+.section {
+  height: 60vh;
+  background-color: gainsboro;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
-section:nth-child(even)
-{
-    background-color: gainsboro;
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5 rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  line-height: 8vh;
 }
-.slides h2
-{
-    margin: 0;
-    padding: 0;
-    font-size:200%;
-    font-weight: bold;
-    text-align: center;
-    line-height:30vh;
+.QnA h2 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
-.dec
-{
-    margin: 0;
-    padding: 0;
-    position: absolute;
+#WelcomeShoeBox h2 {
+  text-align: right;
+  line-height: 5vh;
 }
-.d1
-{
-    width: 300px;
-    height: 100px;
-    left: 15%;
-    top: 60%;
-    border: 2px solid aquamarine;
+#WelcomeShoeBox {
+  top: 50vh;
+  height: 10vh;
+  transform: translateY(-50%);
+  position: absolute;
+  background-color: gainsboro;
 }
-.d2
-{
-    width: 125px;
-    height: 200px;
-    left: 67%;
-    top: 8%;
-    border: 2px solid cornflowerblue;
+.row {
 }
-.d3
-{
-    width: 100px;
-    height: 250px;
-    left: 72%;
-    top: 20%;
-    border: 2px solid darkmagenta;
+img {
+  width: 100%;
+  z-index: -1;
 }
-#ShoeBox h2,
-#QnA h2
-{
-    line-height:100vh;
+p {
+  margin: 0px;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
 }
-img
-{
-    position: absolute;
+.parallax {
+  height: 20vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-color: aqua;
 }
-.intro
-{
-    position: absolute;
+.head {
+  height: 100vh;
+  background-image: url("img/span/1.jpg");
 }
-#AboutMe .intro
-{
-    left:50%;
+.span1 {
+  top: 100vh;
+  height: 30vh;
+  transform: translateY(-100%);
+  position: relative;
+  opacity: 0;
+}
+.span2 {
+  background-image: url("img/span/2.jpg");
+}
+.span3 {
+  background-image: url("img/span/3.jpg");
+}
+.span4 {
+  background-image: url("img/span/4.jpg");
+}
+.span5 {
+  background-image: url("img/span/5.jpg");
+}
+.span6 {
+  background-image: url("img/span/6.jpg");
+}
+.span7 {
+  background-image: url("img/span/7.jpg");
 }
 
-#myphoto
-{
-    top:20%;
-    left: 20%; 
-    width: 25%;    
+/*
+<div class="dec d1"></div>
+<div class="dec d2"></div>
+<div class="dec d3"></div>
+.dec {
+  margin: 0;
+  padding: 0;
+  position: absolute;
 }
-#Wuqi
-{   
-    top:30%;
-    left: 10%;
+.d1 {
+  width: 300px;
+  height: 100px;
+  left: 15%;
+  top: 60%;
+  border: 2px solid aquamarine;
 }
-#saltycake
-{
-    top: 55%;
-    left: 32%;
-    width: 30%;
+.d2 {
+  width: 125px;
+  height: 200px;
+  left: 67%;
+  top: 8%;
+  border: 2px solid cornflowerblue;
 }
-#outlet{
-    top: 25%;
-    left:60%;
-    width: 30%;
-}
-#lazy
-{
-    top: 30%;
-    left: 10%;
-}
-#volleyball
-{
-    left: 40%;
-}
-#movie
-{
-    top: 20%;
-    left: 60%;
-    width: 30%
-}
-#coding
-{
-    top: 30%;
-    left: 10%;
-    width: 25%;
-}
-#writing
-{
-    top: 40%;
-    left: 32%;
-    width: 30%;
-}
-#acting
-{
-    top: 25%;
-    left: 60%;
-    width: 25%;
-}
-#Expectation
-{
-    display: flex;
-    justify-content:center;
-}
-#diligent 
-{
-    top: 25%;
-}
+.d3 {
+  width: 100px;
+  height: 250px;
+  left: 72%;
+  top: 20%;
+  border: 2px solid darkmagenta;
+}*/
