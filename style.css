@@ -12,18 +12,20 @@ body {
   overflow: hidden;
 }
 .menu {
-  top: 0;
+  bottom: 0;
   position: fixed;
   z-index: 5;
 }
 #menu li a {
-  padding: 5px 15px;
-  border-color: cornflowerblue;
+  margin-bottom: 1px;
+  padding: 1vmin 2vmin;
+  border: 1px solid black;
+  border-radius: 5px;
   background-color: greenyellow;
   border-left: 5px solid black;
-  font-size: 1rem;
+  font-size: 2vmin;
   font-weight: bold;
-  opacity: 0.4;
+  opacity: 0.5;
   color: black;
 }
 #menu li a:hover,
@@ -32,46 +34,46 @@ body {
   transition-duration: 0.5s;
   opacity: 1;
 }
-#myPhoto {
-  left: 40%;
-  height: 40vh;
-  width: auto;
-  position: absolute;
-}
+
 .section {
-  height: 60vh;
   background-color: gainsboro;
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
+/*
+.row {
+  overflow: scroll;
+} 
+.row::-webkit-scrollbar {
+  width: 0 !important;
+}
+.row {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}*/
+
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 1.5 rem;
+  font-size: 4.5vmin;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
   line-height: 8vh;
 }
-.QnA h2 {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
 #WelcomeShoeBox h2 {
+  background-color: lightsalmon;
   text-align: right;
-  line-height: 5vh;
+  line-height: 5vmin;
 }
 #WelcomeShoeBox {
   top: 50vh;
-  height: 10vh;
+  padding: 0;
+  height: 10vmin;
   transform: translateY(-50%);
   position: absolute;
   background-color: gainsboro;
-}
-.row {
 }
 img {
   width: 100%;
@@ -83,7 +85,7 @@ p {
   font-size: 1.2rem;
 }
 .parallax {
-  height: 20vh;
+  height: 55vh;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
