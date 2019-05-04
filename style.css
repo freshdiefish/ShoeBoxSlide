@@ -11,6 +11,66 @@ body {
   padding: 0;
   overflow: hidden;
 }
+.section {
+  background-color: gainsboro;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5vmin;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  line-height: 8vh;
+}
+.title {
+  top: 50vh;
+  padding: 0;
+  height: 10vmin;
+  transform: translateY(-50%);
+  position: absolute;
+  background-color: gainsboro;
+}
+.QnA {
+  bottom: 50vh;
+  padding: 0;
+  height: 10vmin;
+  transform: translateY(50%);
+  position: absolute;
+  background-color: gainsboro;
+}
+.title h2,
+.QnA h2 {
+  background-color: lightsalmon;
+  text-align: right;
+  line-height: 5vmin;
+}
+.QnA h2 {
+  font-size: 6vmin;
+  text-align: center;
+}
+img {
+  width: 100%;
+  z-index: -1;
+}
+p {
+  margin: 0px;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+.parallax {
+  height: 60vh;
+  background-color: transparent;
+}
+.parallax-full {
+  height: 100vh;
+  background-color: transparent;
+}
+
+/*選單*/
 .menu {
   bottom: 0;
   position: fixed;
@@ -34,93 +94,6 @@ body {
   transition-duration: 0.5s;
   opacity: 1;
 }
-
-.section {
-  background-color: gainsboro;
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-}
-/*
-.row {
-  overflow: scroll;
-} 
-.row::-webkit-scrollbar {
-  width: 0 !important;
-}
-.row {
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-}*/
-
-h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 4.5vmin;
-  font-weight: bold;
-  text-decoration: underline;
-  text-align: center;
-  line-height: 8vh;
-}
-#WelcomeShoeBox h2 {
-  background-color: lightsalmon;
-  text-align: right;
-  line-height: 5vmin;
-}
-#WelcomeShoeBox {
-  top: 50vh;
-  padding: 0;
-  height: 10vmin;
-  transform: translateY(-50%);
-  position: absolute;
-  background-color: gainsboro;
-}
-img {
-  width: 100%;
-  z-index: -1;
-}
-p {
-  margin: 0px;
-  margin-bottom: 1.2rem;
-  font-size: 1.2rem;
-}
-.parallax {
-  height: 55vh;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-color: aqua;
-}
-.head {
-  height: 100vh;
-  background-image: url("img/span/1.jpg");
-}
-.span1 {
-  top: 100vh;
-  height: 30vh;
-  transform: translateY(-100%);
-  position: relative;
-  opacity: 0;
-}
-.span2 {
-  background-image: url("img/span/2.jpg");
-}
-.span3 {
-  background-image: url("img/span/3.jpg");
-}
-.span4 {
-  background-image: url("img/span/4.jpg");
-}
-.span5 {
-  background-image: url("img/span/5.jpg");
-}
-.span6 {
-  background-image: url("img/span/6.jpg");
-}
-.span7 {
-  background-image: url("img/span/7.jpg");
-}
-
 /*
 <div class="dec d1"></div>
 <div class="dec d2"></div>
