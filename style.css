@@ -9,14 +9,15 @@ body {
 }
 .container-fluid {
   padding: 0;
-  overflow: hidden;
 }
 .section {
+  min-height: 50vh;
   background-color: gainsboro;
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
+h1,
 h2 {
   margin: 0;
   padding: 0;
@@ -42,13 +43,13 @@ h2 {
   position: absolute;
   background-color: gainsboro;
 }
-.title h2,
-.QnA h2 {
+.title h1,
+.QnA h1 {
   background-color: lightsalmon;
   text-align: right;
   line-height: 5vmin;
 }
-.QnA h2 {
+.QnA h1 {
   font-size: 6vmin;
   text-align: center;
 }
@@ -62,14 +63,13 @@ p {
   font-size: 1.2rem;
 }
 .parallax {
-  height: 60vh;
+  height: 50vh;
   background-color: transparent;
 }
 .parallax-full {
   height: 100vh;
   background-color: transparent;
 }
-
 /*選單*/
 .menu {
   bottom: 0;
@@ -94,33 +94,3 @@ p {
   transition-duration: 0.5s;
   opacity: 1;
 }
-/*
-<div class="dec d1"></div>
-<div class="dec d2"></div>
-<div class="dec d3"></div>
-.dec {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-}
-.d1 {
-  width: 300px;
-  height: 100px;
-  left: 15%;
-  top: 60%;
-  border: 2px solid aquamarine;
-}
-.d2 {
-  width: 125px;
-  height: 200px;
-  left: 67%;
-  top: 8%;
-  border: 2px solid cornflowerblue;
-}
-.d3 {
-  width: 100px;
-  height: 250px;
-  left: 72%;
-  top: 20%;
-  border: 2px solid darkmagenta;
-}*/
